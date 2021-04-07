@@ -297,7 +297,7 @@ section {
 }
 
 .services .content {
-    display: flex;
+    
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
@@ -305,21 +305,21 @@ section {
 }
 
 .services .content .servicesBx {
+    display: flex;
     box-sizing: border-box;
     padding: 40px 20px;
-    max-width: 340px;
     margin: 20px;
     transition: 0.5s;
     text-align: center;
-    background-color: #f5f5f5;
+    background-color: #fff;
+    align-items: center;
 }
 
 .services .content .servicesBx:hover {
-    background-color: #333;
+    background-color: #f5f5f5;
 }
 
 .services .content .servicesBx img {
-    max-width: 80px;
     transition: 0.5s;
 }
 
@@ -338,7 +338,7 @@ section {
 
 .services .content .servicesBx:hover h2,
 .services .content .servicesBx:hover p {
-    color: #fff;
+    color: rgb(51, 51, 51,0.8);
     transition: 0.5s;
 }
 
@@ -442,7 +442,9 @@ section {
 }
 
 
-
+.contact-mail{
+    font-size: 1.5em;
+}
 
 
 .contactForm {
@@ -510,7 +512,16 @@ section {
         max-width: 340px;
         margin: 10px;
     }
-
+    .services .content .servicesBx img{
+        display: none;
+    }
+    .services .content .servicesBx1{
+        background: url('../img/visitbusan-logo.png')no-repeat center center;
+    }
+    .services .content .servicesBx2{
+        background: url('../img/toyota-logored.png')no-repeat center center;
+        max-width: 100%
+    }
     .contact .contactForm {
         width: 100%;
     }
