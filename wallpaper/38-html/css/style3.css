@@ -1,0 +1,161 @@
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif;
+    background: #485961;
+    color: #ffe6cf;
+    font-size: 11px;
+    line-height: 1.4;
+    font-weight: 500;
+    margin-bottom: 72px;
+}
+
+h1 {
+    margin: 0;
+    line-height: 1;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+p {
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+.search{
+    margin: 20px;
+    position: relative;
+}
+.search form{
+    display: flex;
+}
+.search form:hover .search-icon{
+    opacity: 1;
+}
+.search input{
+    width: 100%;
+}
+.search .search-icon{
+    position: absolute;
+    left: 12px;
+    top: 12px;
+    opacity: 0.3;
+}
+.search .search-field{
+    flex-shrink: 0;
+}
+.search .search-field:focus{
+    width: 80%;
+    flex-shrink: initial;
+    transition: 0.3s;
+}
+.search .search-field:focus~ .cancel-button{
+    opacity: 1;
+}
+.search .cancel-button{
+    flex-shrink: 0;
+    margin-left: 20px;
+    opacity: 0;
+    transition: 0.2s;
+}
+input{
+    background-color: rgba(255,255,255,0.08);
+    border: none;
+    height: 40px;
+    border-radius: 8px;
+    font-size: 14px;
+    text-align: center;
+    color: white;
+    transition: 0.2s;
+}
+/* 눌렀을때의 색이 변화한다 */
+input:focus{
+    outline: none;
+    background-color:rgba(255,255,255,0.12);
+}
+input::placeholder{ 
+    color:rgba(255,255,255,0.3);
+    text-align: center;
+}
+.text-area{
+    padding-top: 124px;
+    margin:24px;
+    margin-bottom: 12px;
+}
+.desc{
+    margin-top: 12px;
+}
+.list{
+    font-size: 0;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 148px;
+    grid-column-gap: 17px;
+    grid-row-gap: 18px;
+    padding: 24px;
+}
+.list .item:nth-child(1){
+    background-image: url('../img/likes-1.jpg');
+}
+.list .item:nth-child(2){
+    background-image: url('../img/likes-2.jpg');
+}
+.list .item:nth-child(3){
+    background-image: url('../img/likes-3.jpg');
+}
+.list .item:nth-child(4){
+    background-image: url('../img/likes-4.jpg');
+}
+.list .item:nth-child(5){
+    background-image: url('../img/likes-1.jpg');
+}
+.list .item:nth-child(6){
+    background-image: url('../img/likes-2.jpg');
+}
+.list .item{ 
+    display: inline-block;
+    background-size: cover;
+    background-position:center;
+    border-radius: 5px;
+}
+button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #ffe6cf;
+    font-size: 15px;
+}
+
+
+.gnb{
+    width: 100%;
+    height: 72px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #394952;
+    box-shadow: inset 0 1px 0 0 rgb(0, 0, 0,0.08);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+.gnb a{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.3;
+}
+.gnb .active{
+    opacity: 1;
+}
