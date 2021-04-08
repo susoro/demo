@@ -1,12 +1,13 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800&display=swap');
 
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Lato', 'Noto Sans KR', Verdana, Dotum, AppleGothic, sans-serif;
+    font-family: 'Montserrat', 'Noto Sans KR', Verdana, Dotum, AppleGothic, sans-serif;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 button {
@@ -106,7 +107,7 @@ section {
 .banner .contentBx h2 {
     font-size: 3em;
     color: #333;
-    line-height: 1em;
+    line-height: 1.5em;
 }
 
 .banner .contentBx p {
@@ -322,7 +323,9 @@ section {
 .services .content .servicesBx img {
     transition: 0.5s;
 }
-
+.servicesBx-slogo img{
+    display: none;
+}
 /* .services .content .servicesBx:hover img {
     filter: invert(1);
 
@@ -505,22 +508,16 @@ section {
 
     .about .content {
         margin-top: 0px;
+        display: flex;
     }
 
     .services .content .servicesBx {
+        display: flex;
         padding: 30px 20px;
-        max-width: 340px;
+        max-width: 740px;
         margin: 10px;
-    }
-    .services .content .servicesBx img{
-        display: none;
-    }
-    .services .content .servicesBx1{
-        background: url('../img/visitbusan-logo.png')no-repeat center center;
-    }
-    .services .content .servicesBx2{
-        background: url('../img/toyota-logored.png')no-repeat center center;
-        max-width: 100%
+        flex-direction: column;
+        align-items: center;
     }
     .contact .contactForm {
         width: 100%;
