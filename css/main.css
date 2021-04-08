@@ -7,9 +7,10 @@
     padding: 0;
     font-family: 'Montserrat', 'Noto Sans KR', Verdana, Dotum, AppleGothic, sans-serif;
     scroll-behavior: smooth;
-    overflow-x: hidden;
 }
-
+body{
+    overflow-y: auto; overflow-x: hidden;
+}
 button {
     background: transparent;
     cursor: pointer;
@@ -232,6 +233,7 @@ section {
     font-size: 1.8em;
     font-weight: 700;
     letter-spacing: 1px;
+    
 }
 
 .white,
@@ -326,10 +328,16 @@ section {
 .servicesBx-slogo img{
     display: none;
 }
-/* .services .content .servicesBx:hover img {
-    filter: invert(1);
-
-} */
+.servicesBx-desc-title{
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #3D4474;
+    margin-bottom: 10px;
+    
+}
+.servicesBx-desc a{
+    text-decoration: none; outline: none;
+}
 
 .services .content .servicesBx h2 {
     margin-top: 20px;
